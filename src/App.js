@@ -18,7 +18,6 @@ import EditCourse from "./components/Courses/EditCourse/EditCourse";
 import SaibamaisCourse from "./components/ServidorMode/SaibamaisCourse";
 
 function App() {
-  
   const apiURLCourses = "https://ironrest.cyclic.app/cursos";
   const apiURL = "https://ironrest.cyclic.app/servidorespublicos";
 
@@ -111,13 +110,10 @@ function App() {
             />
           }
         />
-        <Route path="/pageServidor" element ={<ServPage/>}    
-            
-        />
-         <Route path="/saibaMaisCourse" element ={<SaibamaisCourse/>}  />
+        <Route path="/pageServidor" element={<ServPage />} />
+        <Route path="/saibaMaisCourse/:id" element={<SaibamaisCourse />} />
 
-              <Route path="*" element={<ErrorPage />} />
-            
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </div>
