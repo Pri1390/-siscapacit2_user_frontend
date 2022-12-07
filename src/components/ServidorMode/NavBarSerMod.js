@@ -22,11 +22,12 @@ function NavBarServMod() {
             >
               HomePage
             </Link>
-                </Nav>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
+//gio
 
 export default NavBarServMod;
