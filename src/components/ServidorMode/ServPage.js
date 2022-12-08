@@ -67,6 +67,7 @@ function ServPage() {
                     <Link
                       className="saibamais"
                       to={`/saibaMaisCourse/${current._id}`}
+                      style={{ textDecoration: "none" }}
                     >
                       Saiba mais
                     </Link>
