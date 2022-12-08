@@ -13,7 +13,7 @@ function NavigationBar() {
   }
 
   
-  if (location.pathname === "/saibaMaisCourse" ) {
+  if (location.pathname === "/saibaMaisCourse/:id" ) {
     return null;
   }
   

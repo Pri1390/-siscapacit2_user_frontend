@@ -1,4 +1,4 @@
-import { Button, Container } from "react-bootstrap";
+import { Button, Container,Card, Col, Form, ListGroup } from "react-bootstrap";
 import NavBarServMod from "./NavBarSerMod";
 import NavBarServCourses from "./NavBarServCourses";
 import ServPage from "./ServPage";
@@ -31,14 +31,48 @@ function SaibamaisCourse() {
       <NavBarServMod />
       <NavBarServCourses />
       <Container>
-        <h1>Página de Detalhes de cada curso</h1>
-        <h2>{data.nome}</h2>
+        
+        <Card className="mb-3 mt-3 d-flex align-items-center justify-content-center "
+                style={{ width: "30rem" }}>
+        <Card.Img variant="top" src={data.foto} />
+        </Card>        
+        <h2 className="mb-5 mt-5">{data.nome}</h2>
+          
 
-        <br />
-        <br />
-        <p>Opção de Inscrever-se</p>
+        <Col>
+             <ListGroup.Item action variant="primary">
+                  Descrição: {data.descricao}
+                </ListGroup.Item>
+                <ListGroup.Item action variant="warning">
+                  Período de inscrição: {data.situacao}
+                </ListGroup.Item>
+              <ListGroup variant="flush">
+                <ListGroup.Item  action variant="success">
+                  Forma de realização: {data.formaRealizacao}
+                </ListGroup.Item>
+                <ListGroup.Item  action variant="secondary">
+                  Local: {data.local}
+                </ListGroup.Item>
+                <ListGroup.Item action variant="success">
+                  Ofertante: {data.ofertante}
+                </ListGroup.Item>
+                <ListGroup.Item action variant="success">
+                  Tipo: {data.tipo}
+                </ListGroup.Item>
+                 <ListGroup.Item action variant="warning">
+                  Período de inscrição: {data.periodoInscricao}
+                </ListGroup.Item>
+                <ListGroup.Item action variant="warning">
+                  Período de realização: {data.periodoRealizacao}
+                </ListGroup.Item>
+              </ListGroup>
+            </Col>
 
-        <Button className="p-4" variant="success" size="lg">
+        <br/>
+        <br/>
+        
+
+        <Button className="p-4 mb-3" variant="success" >
           Inscrever-se
         </Button>
       </Container>
