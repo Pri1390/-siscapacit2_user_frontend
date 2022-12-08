@@ -23,9 +23,9 @@ function NavBarServCourses() {
                 Inscrições Abertas
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Em andamento
+                Inscrições encerradas
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">concluído</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Em breve</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Por tipo" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">
