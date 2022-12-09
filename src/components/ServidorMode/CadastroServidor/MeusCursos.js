@@ -7,7 +7,7 @@ function MeusCursos() {
       <br />
       <h3>Em andamento</h3> <br /> <br />
       <br />
-      <h4>Concluido</h4> <br /> <br />
+      <h4>Concluído</h4> <br /> <br />
       <br />
     </div>
   );
